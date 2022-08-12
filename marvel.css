@@ -1,0 +1,204 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont1 {
+    width: 50%;
+    height: 20%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.marvel-logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+    animation: ml 3s ease infinite;
+}
+
+@keyframes ml {
+    0% {
+        background-color: red;
+        color: white;
+    }
+
+    25% {
+        background-color: gray;
+        color: red;
+    }
+
+    50% {
+        background-color: green;
+        color: blue;
+    }
+
+    100% {
+        background-color: red;
+        color: white;
+    }
+}
+
+.marvel-logo:hover {
+    box-shadow: 0px 0px 10px 5px white;
+}
+
+.container {
+    background-color: black;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic {
+    position: absolute;
+    width: 50%;
+    height: calc(100vh - 55.7vh);
+    top: 3.5%;
+    background-image: url("iron man.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.light {
+    position: absolute;
+    bottom: 2.6%;
+    margin-left: 1px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(70, 86, 89);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 10px rgb(151, 251, 253);
+}
+
+.blackvoid {
+    background-color: black;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 10px rgb(151, 251, 253);
+}
+
+.lillight {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 4px solid rgb(151, 251, 253);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: lll 3s linear infinite;
+}
+
+@keyframes lll {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.ll1 {
+    width: 80%;
+    height: 80%;
+    border: 3px solid rgb(151, 251, 253);
+    background-color: rgb(27, 66, 82);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.ll2 {
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(151, 251, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.ll3 {
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    background-color: rgb(151, 251, 253);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 50px 15px rgb(151, 251, 253);
+    z-index: 3;
+}
+
+.ll4 {
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
+}
+
+.b1 {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: black;
+}
+
+.b2 {
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    background-color: black;
+}
+
+.b3 {
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    background-color: black;
+    transform: rotate(-45deg);
+}
+
+.b4 {
+    position: absolute;
+    transform: rotate(45deg);
+    width: 80px;
+    height: 10px;
+    background-color: black;
+}
+
+.S {
+    position: absolute;
+    left: 45%;
+    font-size: 120px;
+    color: rgb(151, 251, 253);
+}
